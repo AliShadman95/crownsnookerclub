@@ -1,0 +1,202 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+/* global */
+body {
+  background-color: #f4f4f4;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn {
+  height: 30px;
+  border: 0;
+  background-color: #f1c40f;
+}
+.btn:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+/*header*/
+#branding {
+  float: left;
+  margin-left: 50px;
+}
+
+#header-img {
+  max-height: 80px;
+}
+
+header {
+  background-color: #357;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 100px;
+  border-bottom: #e8491d 3px solid;
+  position: fixed;
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0px 70px 0px 70px;
+}
+
+#nav-bar {
+  float: right;
+  padding-top: 50px;
+}
+
+/* showcase*/
+#Showcase {
+  min-height: 550px;
+  background: url("https://www.wpbsa.com/wp-content/uploads/2016/05/generic3.jpg") no-repeat 0px -200px;
+}
+
+/* hero*/
+#hero {
+  padding: 15px;
+  background-color: #357;
+  color: #ffffff;
+}
+
+#hero h1 {
+  float: left;
+  padding-left: 75px;
+}
+
+#hero form {
+  float: right;
+  margin-top: 18px;
+}
+
+#hero input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/*Features*/
+#Features {
+  margin-top: 20px;
+  color: black;
+}
+
+#Features .box {
+  float: left;
+  width: 30%;
+  padding: 30px;
+  text-align: center;
+}
+
+/* video */
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+#how-it-works iframe {
+  max-width: 660px;
+  border-width: 0px;
+}
+
+/*products*/
+#Products {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 100px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  float: left;
+  max-height: 500px;
+  max-width: 370px;
+}
+
+.level {
+  background-color: #339;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 15px;
+}
+
+ul {
+  margin: 15px 0;
+  list-style: none;
+}
+
+li {
+  padding: 5px 0;
+  padding-right: 30px;
+}
+
+.productImg {
+  max-width: 100%;
+}
+
+/* footer*/
+footer {
+  padding: 10px;
+  background-color: #357;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Media*/
+@media (max-width: 800px) {
+  header #branding,
+  header #nav-bar,
+  header li {
+    float: none;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  .box, .box2 {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    float: left;
+    margin-left: 80px;
+  }
+}
